@@ -400,7 +400,7 @@
         f.initBody();
         f.initMainEle();
 
-        rhino6502doc.initController({
+        rhino6502doc.initRefCard({
             data: {
                 addrModes: rhino6502doc.addrModes,
                 mnemonics: rhino6502doc.mnemonics,

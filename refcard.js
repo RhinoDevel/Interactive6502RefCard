@@ -370,5 +370,5 @@
         f.activateCommand(d.commands[0]);
     };
 
-    rhino6502doc.initController = f.init;
+    rhino6502doc.initRefCard = f.init;
 }());
