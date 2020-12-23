@@ -206,11 +206,11 @@
 
         if(!h.num.isNum(v))
         {
-            return;
+            return false;
         }
         if(v < 0 || v > 255)
         {
-            return;
+            return false;
         }
 
         cmd = d.commands.find(
@@ -221,9 +221,10 @@
 
         if(typeof cmd === 'undefined') // Happens for unsupported opcodes.
         {
-            return;
+            return false;
         }
         f.activateCommand(cmd);
+		return true;
     };
 
     f.onUserSelectedAddrMode = function(addrMode)
@@ -370,5 +371,6 @@
         f.activateCommand(d.commands[0]);
     };
 
-    rhino6502doc.initRefCard = f.init;
+    rhino6502doc.refCardInit = f.init;
+	rhino6502doc.refCardTryActivateCommand = f.tryActivateCommand;
 }());

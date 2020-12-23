@@ -19,7 +19,7 @@
     {
         f.initBody();
 
-        rhino6502doc.initRefCard(
+        rhino6502doc.refCardInit(
 			{
 				data: {
 					addrModes: rhino6502doc.addrModes,
