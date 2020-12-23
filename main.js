@@ -10,7 +10,7 @@
     var g = rhino6502doc, // Shortcut
         f = {}, 
         v = {};
-
+		
     f.createCycleColumnEle = function(
         htmlContent, tooltip, parentNode, flexOrder)
     {
@@ -52,6 +52,30 @@
 
         f.initCycleEleContent();
     };
+	
+	f.initByteCountEleContent = function()
+    {
+		var titleEle = g.ele.createAndAppend('div', v.byteCountEle, 1);
+
+        titleEle.innerHTML = 'Bytes';
+        titleEle.style['font-weight'] = 'bold';
+        
+        v.byteCountValEle = g.ele.createAndAppend('div', v.byteCountEle, 2);
+    };
+	f.initByteCountEle = function(parentNode, flexOrder)
+	{
+		v.byteCountEle = g.ele.createAndAppend(
+			'div', parentNode, flexOrder, 'column');
+			
+		v.byteCountEle.style.border = '1px solid black';
+        v.byteCountEle.style['margin-right'] = '0.4ch';
+		v.byteCountEle.style.width = '5.1ch';
+        v.byteCountEle.style['text-align'] = 'center';
+        v.byteCountEle.style['background-color'] = 'springgreen';
+        v.byteCountEle.title = 'Byte count.';
+
+        f.initByteCountEleContent();
+	}
 
     f.createFlagBitEle = function(
         htmlContent, tooltip, bgColor, parentNode, flexOrder)
@@ -274,14 +298,15 @@
     f.initMiddleRightTopEleContent = function()
     {
         f.initCycleEle(v.middleRightTopEle, 1);
-        f.initFlagsEle(v.middleRightTopEle, 2);
+		f.initByteCountEle(v.middleRightTopEle, 2);
+        f.initFlagsEle(v.middleRightTopEle, 3);
     };
     f.initMiddleRightTopEle = function()
     {
         v.middleRightTopEle = g.ele.createAndAppend(
             'div', v.middleRightEle, 1, 'row');
 
-        v.middleRightTopEle.style['justify-content'] = 'space-between';
+        v.middleRightTopEle.style['justify-content'] = 'flex-end';
         v.middleRightTopEle.style['margin-bottom'] = '0.4ch';
 
         f.initMiddleRightTopEleContent();
@@ -386,6 +411,7 @@
                 cycleCountMin: v.cycleCountMinEle,
                 cycleAddOnBranch: v.cycleAddOnBranchEle,
                 cycleAddOnPageCross: v.cycleAddOnPageCrossEle,
+				byteCount: v.byteCountValEle,
                 n: v.nValEle,
                 v: v.vValEle,
                 bitFive: v.bitFiveValEle,

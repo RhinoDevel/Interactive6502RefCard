@@ -147,6 +147,8 @@
         e.cycleAddOnBranch.textContent = cmd.cycleAddOnBranch
             ? '+1'
             : '';
+			
+		e.byteCount.textContent = addrMode.byteCount;
 
         e.n.textContent = f.getFlagTextContent(cmd.n);
         e.v.textContent = f.getFlagTextContent(cmd.v);
