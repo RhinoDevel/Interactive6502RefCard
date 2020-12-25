@@ -38,7 +38,7 @@
 	{
 		v.offsetInputEle = g.ele.createAndAppend('input', parentNode, flexOrder);
 		
-		v.offsetInputEle.title = 'Enter byte offset of code in loaded binary.';
+		v.offsetInputEle.title = 'Enter byte offset of code in loaded binary as decimal value.';
 		v.offsetInputEle.placeholder = 'byte offset';
 		v.offsetInputEle.style['text-align'] = 'right';
 		v.offsetInputEle.style['padding-left'] = '0.2ch';
