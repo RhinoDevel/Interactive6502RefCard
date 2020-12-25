@@ -17,6 +17,12 @@
 
     f.onLoad = function()
     {
+		var helpers = {
+					obj: rhino6502doc.obj,
+					ele: rhino6502doc.ele,
+					num: rhino6502doc.num
+				};
+		
         f.initBody();
 
         rhino6502doc.refCardInit(
@@ -28,13 +34,16 @@
 					flagAffect: rhino6502doc.flagAffect
 				},
 				ele: rhino6502doc.refCardUiInitAndGetEles(document.body, null),
-				helpers: {
-					obj: rhino6502doc.obj,
-					ele: rhino6502doc.ele,
-					num: rhino6502doc.num
-				}
+				helpers: helpers
+			});
+			
+		rhino6502doc.disAsmInit(
+			{
+				data: {},
+				ele: rhino6502doc.disAsmUiInitAndGetEles(document.body, null),
+				helpers: helpers
 			});
     };
 
-    window.addEventListener('load', f.onLoad);
+    window.addEventListener('load', f.onLoad);	
 }());
