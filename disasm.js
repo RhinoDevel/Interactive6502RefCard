@@ -151,7 +151,8 @@
 			if(cmd === null)
 			{
 				line.bytes = f.getBytesStr(i, 1);
-				line.code = '???';
+				line.code = '<span style="color: red; font-weight: bold;">'
+						+ 'unknown' + '</span>'
 				toAdd = 1;
 			}
 			else
@@ -165,7 +166,8 @@
 
 				if(i + addrMode.byteCount > v.binary.length)
 				{
-					line.code += 'INCOMPLETE'; 
+					line.code += '<span style="color: red; font-weight: bold;">'
+						+ 'incomplete' + '</span>'; 
 				}
 				else
 				{
@@ -229,7 +231,7 @@
 			lineBytesEle.style.width = '10ch';
 			
 			lineCodeEle = h.ele.createAndAppend('div', lineEle, 3);
-			lineCodeEle.textContent = line.code;
+			lineCodeEle.innerHTML = line.code;
 			lineCodeEle.style['padding-left'] = '0.2ch';
 			lineCodeEle.style['padding-right'] = '0.4ch';
 			lineCodeEle.style['flex'] = '1';
