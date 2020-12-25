@@ -28,6 +28,8 @@
 		v.binaryInputEle = g.ele.createAndAppend(
 			'input', parentNode, flexOrder);
 			
+		v.binaryInputEle.style['margin-bottom'] = '0.4ch';
+			
 		v.binaryInputEle.title = 'Select binary source file to load.';
 			
 		v.binaryInputEle.type = 'file';
@@ -57,6 +59,8 @@
 	f.initOffsetEle = function(parentNode, flexOrder)
 	{
 		v.offsetEle = g.ele.createAndAppend('div', parentNode, flexOrder, 'row'); 
+		
+		v.offsetEle.style['margin-bottom'] = '0.4ch';
 		
 		f.initOffsetEleContent();
 	};
