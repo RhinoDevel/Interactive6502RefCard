@@ -14,6 +14,8 @@
     f.initBody = function()
     {
 		v.mainEle = g.ele.createAndAppend('div', document.body, null, 'row');
+		
+		v.mainEle.style['flex-wrap'] = 'wrap';
     };
 
     f.onLoad = function()
