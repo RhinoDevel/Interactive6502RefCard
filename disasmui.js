@@ -51,6 +51,11 @@
 		v.codeEle = g.ele.createAndAppend(
 			'div', parentNode, flexOrder, 'column');
 		
+		v.codeEle.style.border = '1px solid black';
+		v.codeEle.style.width = '38ch';
+		v.codeEle.style.height = '48ch';
+		v.codeEle.style['overflow-y'] = 'scroll';
+		
 		f.initCodeEleContent();
 	};
 

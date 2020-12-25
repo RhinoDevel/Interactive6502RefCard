@@ -128,8 +128,13 @@
 		    cmd = null,
 			addrMode = null,
 			line = { bytes: null, code: null },
+			lineCount = 0,
 			lineEle = null,
-			toAdd = 0;
+			lineAddrEle = null,
+			lineBytesEle = null,
+			lineCodeEle = null,
+			toAdd = 0,
+			curSel = { lineEle: null, bgCol: '' };
 		
 		h.ele.clearContent(e.code);
 		
@@ -171,6 +176,8 @@
 			}
 				
 			lineEle = h.ele.createAndAppend('div', e.code, i + 1, 'row');
+			lineEle.style['background-color'] = lineCount % 2 === 0
+				? 'lightblue' : 'lightcyan';
 			if(cmd !== null)
 			{
 				(function() // IIFE
@@ -181,16 +188,54 @@
 						'click',
 						function()
 						{
-							rhino6502doc.refCardTryActivateCommand(opCode);
+							if(rhino6502doc.refCardTryActivateCommand(opCode))
+							{
+								if(curSel.lineEle !== null)
+								{
+									curSel.lineEle.style['background-color'] =
+										curSel.bgCol;
+										
+									if(curSel.lineEle === this)
+									{
+										curSel.lineEle = null;
+										curSel.bgCol = '';
+										return;
+									}
+								}
+								
+								curSel.lineEle = this;
+								curSel.bgCol = this.style['background-color'];
+									
+								this.style['background-color'] = 'yellow';	
+							}
 						});
 				}());
 			}
-			h.ele.createAndAppend('div', lineEle, 1).textContent =
-				i.toString(16).toUpperCase().padStart(4, '0');
-			h.ele.createAndAppend('div', lineEle, 2).textContent = line.bytes;
-			h.ele.createAndAppend('div', lineEle, 3).textContent = line.code;
-				
+			
+			lineAddrEle = h.ele.createAndAppend('div', lineEle, 1);
+			lineAddrEle.textContent = i.toString(16).toUpperCase().padStart(
+				4, '0');
+			lineAddrEle.style['border-right'] = '1px solid gray';
+			lineAddrEle.style['padding-left'] = '0.4ch';
+			lineAddrEle.style['padding-right'] = '0.2ch';
+			lineAddrEle.style.width = '6ch';
+			lineAddrEle.style['text-align'] = 'right';
+	
+			lineBytesEle = h.ele.createAndAppend('div', lineEle, 2);
+			lineBytesEle.textContent = line.bytes;
+			lineBytesEle.style['border-right'] = '1px solid gray';
+			lineBytesEle.style['padding-left'] = '0.2ch';
+			lineBytesEle.style['padding-right'] = '0.2ch';
+			lineBytesEle.style.width = '10ch';
+			
+			lineCodeEle = h.ele.createAndAppend('div', lineEle, 3);
+			lineCodeEle.textContent = line.code;
+			lineCodeEle.style['padding-left'] = '0.2ch';
+			lineCodeEle.style['padding-right'] = '0.4ch';
+			lineCodeEle.style['flex'] = '1';
+			
 			i += toAdd;
+			++lineCount;
 		}
 	};
 
