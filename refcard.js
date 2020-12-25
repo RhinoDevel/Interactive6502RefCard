@@ -90,13 +90,18 @@
         return v.mnemonics[mnemonicIndex];
     };
 
+    f.getAddrMode = function(cmd)
+	{
+		return d.addrModes.find(
+			function(m)
+			{
+				return m.id === cmd.addrModeId;
+			});
+	};
+
     f.activateCommand = function(cmd)
     {
-        var addrMode = d.addrModes.find(
-                function(m)
-                {
-                    return m.id === cmd.addrModeId;
-                });
+        var addrMode = f.getAddrMode(cmd);
 
         v.cmdIndex = d.commands.indexOf(cmd); // Kind of stupid..
 
@@ -200,6 +205,21 @@
         f.activateCommandWithAddrMode(mnemonic, addrModeId);
     };
 
+	f.tryGetCmd = function(opCode)
+	{
+		var cmd = d.commands.find(
+            function(c)
+            {
+                return c.opCode === opCode;
+            });
+
+        if(typeof cmd === 'undefined') // Happens for unsupported opcodes.
+        {
+            return null;
+        }
+		return cmd;
+	};
+
     f.tryActivateCommand = function(v)
     {
         var cmd = null;
@@ -213,13 +233,8 @@
             return false;
         }
 
-        cmd = d.commands.find(
-            function(c)
-            {
-                return c.opCode === v;
-            });
-
-        if(typeof cmd === 'undefined') // Happens for unsupported opcodes.
+        cmd = f.tryGetCmd(v);
+        if(cmd === null) // Happens for unsupported opcodes.
         {
             return false;
         }
@@ -372,5 +387,7 @@
     };
 
     rhino6502doc.refCardInit = f.init;
+	rhino6502doc.refCardTryGetCmd = f.tryGetCmd;
 	rhino6502doc.refCardTryActivateCommand = f.tryActivateCommand;
+	rhino6502doc.refCardGetAddrMode = f.getAddrMode;
 }());
