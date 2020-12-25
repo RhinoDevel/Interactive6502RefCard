@@ -388,8 +388,10 @@
     f.initMainEle = function(parentNode, flexOrder)
     {
         v.mainEle = g.ele.createAndAppend(
-		'div', parentNode, flexOrder, 'column');
+			'div', parentNode, flexOrder, 'column');
         
+		v.mainEle.style['margin-right'] = '0.4ch';
+		
         f.initMainEleContent();
     };
 	
