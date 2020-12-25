@@ -291,6 +291,7 @@
             'div', v.middleEle, 1, 'column');
 
         v.middleLeftEle.style['margin-right'] = '0.4ch';
+		v.middleLeftEle.style['margin-bottom'] = '0.4ch';
 
         f.initMiddleLeftEleContent();
     };
@@ -323,6 +324,7 @@
         v.middleRightEle = g.ele.createAndAppend(
             'div', v.middleEle, 2, 'column');
         v.middleRightEle.style.width = '52ch';
+		v.middleRightEle.style['margin-bottom'] = '0.4ch';
 
         f.initMiddleRightEleContent();
     };
@@ -335,6 +337,8 @@
     f.initMiddleEle = function()
     {
         v.middleEle = g.ele.createAndAppend('div', v.mainEle, 2, 'row');
+		
+		v.middleEle.style['flex-wrap'] = 'wrap';
 
         f.initMiddleEleContent();
     };
