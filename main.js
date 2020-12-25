@@ -13,34 +13,31 @@
 		
     f.initBody = function()
     {
+		v.mainEle = g.ele.createAndAppend('div', document.body, null, 'row');
     };
 
     f.onLoad = function()
     {
-		var helpers = {
-					obj: rhino6502doc.obj,
-					ele: rhino6502doc.ele,
-					num: rhino6502doc.num
-				};
+		var helpers = { obj: g.obj, ele: g.ele, num: g.num };
 		
         f.initBody();
 
-        rhino6502doc.refCardInit(
+        g.refCardInit(
 			{
 				data: {
-					addrModes: rhino6502doc.addrModes,
-					mnemonics: rhino6502doc.mnemonics,
-					commands: rhino6502doc.commands,
-					flagAffect: rhino6502doc.flagAffect
+					addrModes: g.addrModes,
+					mnemonics: g.mnemonics,
+					commands: g.commands,
+					flagAffect: g.flagAffect
 				},
-				ele: rhino6502doc.refCardUiInitAndGetEles(document.body, null),
+				ele: g.refCardUiInitAndGetEles(v.mainEle, 1),
 				helpers: helpers
 			});
 			
-		rhino6502doc.disAsmInit(
+		g.disAsmInit(
 			{
 				data: {},
-				ele: rhino6502doc.disAsmUiInitAndGetEles(document.body, null),
+				ele: g.disAsmUiInitAndGetEles(v.mainEle, 2),
 				helpers: helpers
 			});
     };

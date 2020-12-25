@@ -11,6 +11,18 @@
         f = {}, 
         v = {};
 
+	f.initTopEleContent = function()
+    {
+        v.topEle.textContent = 'Disassembler';
+    };
+    f.initTopEle = function(parentNode, flexOrder)
+    {
+        v.topEle = g.ele.createAndAppend('div', parentNode, flexOrder);
+
+        v.topEle.style['font-weight'] = 'bold';
+
+        f.initTopEleContent();
+    };
 	f.initBinaryInputEle = function(parentNode, flexOrder)
 	{
 		v.binaryInputEle = g.ele.createAndAppend(
@@ -20,32 +32,35 @@
 			
 		v.binaryInputEle.type = 'file';
 	};
+	f.initOffsetInputEle = function(parentNode, flexOrder)
+	{
+		v.offsetInputEle = g.ele.createAndAppend('input', parentNode, flexOrder);
+		
+		v.offsetInputEle.title = 'Enter byte offset of code in loaded binary.';
+		v.offsetInputEle.placeholder = 'byte offset';
+		v.offsetInputEle.style['text-align'] = 'right';
+		v.offsetInputEle.style['padding-left'] = '0.2ch';
+		v.offsetInputEle.style['width'] = '10ch';
+		
+		v.offsetInputEle.type = 'number';
+	};
+	
+	f.initOffsetEleContent = function()
+	{
+		v.offsetTitleEle = g.ele.createAndAppend('div', v.offsetEle, 1);
+		
+		v.offsetTitleEle.textContent = 'Byte offset:';
+		v.offsetTitleEle.style['padding-right'] = '0.2ch';
+		
+		f.initOffsetInputEle(v.offsetEle, 2);
+	};
 	f.initOffsetEle = function(parentNode, flexOrder)
 	{
-		v.offsetEle = g.ele.createAndAppend('input', parentNode, flexOrder);
+		v.offsetEle = g.ele.createAndAppend('div', parentNode, flexOrder, 'row'); 
 		
-		v.offsetEle.title = 'Enter byte offset of code in loaded binary.';
-		v.offsetEle.placeholder = 'byte offset';
-		v.offsetEle.style['text-align'] = 'right';
-		
-		v.offsetEle.type = 'number';
+		f.initOffsetEleContent();
 	};
 	
-	f.initTopEleContent = function()
-	{
-		f.initBinaryInputEle(v.topEle, 1);
-		f.initOffsetEle(v.topEle, 2);
-	};
-	f.initTopEle = function(parentNode, flexOrder)
-	{
-		v.topEle = g.ele.createAndAppend('div', parentNode, flexOrder, 'row'); 
-		
-		f.initTopEleContent();
-	};
-	
-	f.initCodeEleContent = function()
-	{
-	};
 	f.initCodeEle = function(parentNode, flexOrder)
 	{
 		v.codeEle = g.ele.createAndAppend(
@@ -55,14 +70,14 @@
 		v.codeEle.style.width = '38ch';
 		v.codeEle.style.height = '48ch';
 		v.codeEle.style['overflow-y'] = 'scroll';
-		
-		f.initCodeEleContent();
 	};
 
     f.initMainEleContent = function()
     {
 		f.initTopEle(v.mainEle, 1);
-		f.initCodeEle(v.mainEle, 2);
+		f.initBinaryInputEle(v.mainEle, 2);
+		f.initOffsetEle(v.mainEle, 3);
+		f.initCodeEle(v.mainEle, 4);
     };
     f.initMainEle = function(parentNode, flexOrder)
     {
@@ -76,7 +91,7 @@
 	{
 		return {
 			binaryInput: v.binaryInputEle,
-			offset: v.offsetEle,
+			offsetInput: v.offsetInputEle,
 			code: v.codeEle
 		};
 	};

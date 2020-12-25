@@ -266,7 +266,7 @@
 	
 	f.onOffsetChange = function()
 	{
-		var val = parseInt(e.offset.value, 10);
+		var val = parseInt(e.offsetInput.value, 10);
 	
 		if(!h.num.isInt(val) || val < 0)
 		{
@@ -284,9 +284,9 @@
 	{
 		v.offset = 0;
 		
-		e.offset.value = v.offset;
+		e.offsetInput.value = v.offset;
 		
-		e.offset.addEventListener('input', f.onOffsetChange);
+		e.offsetInput.addEventListener('input', f.onOffsetChange);
 	};
 
     f.init = function(p)
