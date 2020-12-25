@@ -74,6 +74,7 @@
 		v.codeEle.style.width = '38ch';
 		v.codeEle.style.height = '48ch';
 		v.codeEle.style['overflow-y'] = 'scroll';
+		v.codeEle.style['font-family'] = 'monospace';
 	};
 
     f.initMainEleContent = function()
