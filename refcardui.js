@@ -139,6 +139,7 @@
         v.codeEquivEle.style.height = '100%';
         v.codeEquivEle.style['padding-left'] = '0.4ch';
         v.codeEquivEle.style['padding-right'] = '0.4ch';
+		v.codeEquivEle.style['font-family'] = 'monospace';
 
         v.codeEquivEle.title = 'Equivalent C pseudo-code.';
     };

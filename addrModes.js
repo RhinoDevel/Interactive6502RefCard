@@ -45,7 +45,7 @@
             title: '# immediate',
             byteCount: 2,
             comment: '',
-            codeEquiv: 'val'
+            codeEquiv: 'addr = PC;'
         },
         {
             id: '22',
@@ -53,7 +53,7 @@
             title: 'relative',
             byteCount: 2,
             comment: '',
-            codeEquiv: ''
+            codeEquiv: 'addr = PC + 2 + *PC;'
         },
         {
             id: '23',
@@ -61,7 +61,7 @@
             title: 'zero page',
             byteCount: 2,
             comment: '',
-            codeEquiv: 'mem = val'
+            codeEquiv: 'addr = PC;'
         },
         {
             id: '24',
@@ -69,7 +69,7 @@
             title: 'zero page, X',
             byteCount: 2,
             comment: '',
-            codeEquiv: 'mem = val + X'
+            codeEquiv: 'addr = PC + X;'
         },
         {
             id: '25',
@@ -77,7 +77,7 @@
             title: 'zero page, Y',
             byteCount: 2,
             comment: '',
-            codeEquiv: 'mem = val + Y'
+            codeEquiv: 'addr = PC + Y;'
         },
         {
             id: '26',
@@ -85,7 +85,7 @@
             title: '(zero page, X)',
             byteCount: 2,
             comment: '(pre-)indexed indirect',
-            codeEquiv: 'mem = *(val + X)'
+            codeEquiv: 'addr = *(PC + X);'
         },
         {
             id: '27',
@@ -93,7 +93,7 @@
             title: '(zero page), Y',
             byteCount: 2,
             comment: 'indirect (post-)indexed',
-            codeEquiv: 'mem = *val + Y'
+            codeEquiv: 'addr = *PC + Y;'
         },
 
         // Addressing modes, where the commands have a length of three bytes:
@@ -104,7 +104,7 @@
             title: 'absolute',
             byteCount: 3,
             comment: '',
-            codeEquiv: 'mem = val'
+            codeEquiv: 'addr = *PC | *(PC + 1) << 8;'
         },
         {
             id: '32',
@@ -112,7 +112,7 @@
             title: 'absolute, X',
             byteCount: 3,
             comment: '',
-            codeEquiv: 'mem = val + X'
+            codeEquiv: 'addr = (*PC | *(PC + 1) << 8) + X;'
         },
         {
             id: '33',
@@ -120,7 +120,7 @@
             title: 'absolute, Y',
             byteCount: 3,
             comment: '',
-            codeEquiv: 'mem = val + Y'
+            codeEquiv: 'addr = (*PC | *(PC + 1) << 8) + Y;'
         },
         {
             id: '34',
@@ -128,7 +128,7 @@
             title: '(absolute)',
             byteCount: 3,
             comment: 'absolute indirect',
-            codeEquiv: 'mem = *(val)'
+            codeEquiv: 'addr = *(*PC | *(PC + 1) << 8);'
         }
     ];
 }());

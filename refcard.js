@@ -101,7 +101,8 @@
 
     f.activateCommand = function(cmd)
     {
-        var addrMode = f.getAddrMode(cmd);
+        var addrMode = f.getAddrMode(cmd),
+			codeEquivStr = '';
 
         v.cmdIndex = d.commands.indexOf(cmd); // Kind of stupid..
 
@@ -166,14 +167,24 @@
         h.ele.clearContent(e.codeEquiv);
         if(addrMode.codeEquiv.length > 0)
         {
-            h.ele.createAndAppend('div', e.codeEquiv).textContent =
-                addrMode.codeEquiv;
+			codeEquivStr += '<span style="color: green;">// <strong>PC</strong> holds addr. of next byte after opcode, here.</span>';
+			codeEquivStr += '<br>';
+			codeEquivStr += '<br>';
+            codeEquivStr += addrMode.codeEquiv;
+			codeEquivStr += '<br>';
+			codeEquivStr += '<span style="color: green;">//<br></span>';
+			codeEquivStr += '<span style="color: green;">// Variable <strong>addr</strong> holds address to be used.</span>';
         }
         if(cmd.codeEquiv.length > 0)
         {
-            h.ele.createAndAppend('div', e.codeEquiv).textContent =
-                cmd.codeEquiv;
+			if(codeEquivStr.length > 0)
+			{
+				codeEquivStr += '<br>';
+				codeEquivStr += '<br>';
+			}
+			codeEquivStr += cmd.codeEquiv;
         }
+		h.ele.createAndAppend('div', e.codeEquiv).innerHTML = codeEquivStr;
     };
     f.activateFirstCommand = function(mnemonic)
     {
