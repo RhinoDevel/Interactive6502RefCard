@@ -160,7 +160,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & val'
+            codeEquiv: 'A = A & *addr;'
         },
         {
             opCode: 37,
@@ -176,7 +176,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *mem'
+            codeEquiv: 'A = A & *addr;'
         },
         {
             opCode: 53,
@@ -192,7 +192,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *mem'
+            codeEquiv: 'A = A & *addr;'
         },
         {
             opCode: 33,
@@ -208,7 +208,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *mem'
+            codeEquiv: 'A = A & *addr;'
         },
         {
             opCode: 49,
@@ -224,7 +224,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *mem'
+            codeEquiv: 'A = A & *addr;'
         },
         {
             opCode: 45,
@@ -240,7 +240,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *mem'
+            codeEquiv: 'A = A & *addr;'
         },
         {
             opCode: 61,
@@ -256,7 +256,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *mem'
+            codeEquiv: 'A = A & *addr;'
         },
         {
             opCode: 57,
@@ -272,7 +272,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *mem'
+            codeEquiv: 'A = A & *addr;'
         },
         {
             opCode: 10,
@@ -288,7 +288,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A << 1'
+            codeEquiv: 'A = A << 1;'
         },
         {
             opCode: 6,
@@ -304,7 +304,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem << 1'
+            codeEquiv: '*addr = *addr << 1;'
         },
         {
             opCode: 22,
@@ -320,7 +320,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem << 1'
+            codeEquiv: '*addr = *addr << 1;'
         },
         {
             opCode: 14,
@@ -336,7 +336,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem << 1'
+            codeEquiv: '*addr = *addr << 1;'
         },
         {
             opCode: 30,
@@ -352,7 +352,7 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem << 1'
+            codeEquiv: '*addr = *addr << 1;'
         },
         {
             opCode: 144,
@@ -368,7 +368,10 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: true,
-            codeEquiv: ''
+            codeEquiv: 'if(C == 0)' + '<br>'
+				+ '{' + '<br>'
+				+ '&nbsp;&nbsp;&nbsp;&nbsp;PC = addr;' + '<br>'
+				+ '}'
         },
         {
             opCode: 176,
@@ -384,7 +387,10 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: true,
-            codeEquiv: ''
+            codeEquiv: 'if(C == 1)' + '<br>'
+				+ '{' + '<br>'
+				+ '&nbsp;&nbsp;&nbsp;&nbsp;PC = addr;' + '<br>'
+				+ '}'
         },
         {
             opCode: 240,
@@ -400,7 +406,10 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: true,
-            codeEquiv: ''
+            codeEquiv: 'if(Z == 1)' + '<br>'
+				+ '{' + '<br>'
+				+ '&nbsp;&nbsp;&nbsp;&nbsp;PC = addr;' + '<br>'
+				+ '}'
         },
         {
             opCode: 36,
@@ -448,7 +457,10 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: true,
-            codeEquiv: ''
+            codeEquiv: 'if(N == 1)' + '<br>'
+				+ '{' + '<br>'
+				+ '&nbsp;&nbsp;&nbsp;&nbsp;PC = addr;' + '<br>'
+				+ '}'
         },
         {
             opCode: 208,
@@ -464,7 +476,10 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: true,
-            codeEquiv: ''
+            codeEquiv: 'if(Z == 0)' + '<br>'
+				+ '{' + '<br>'
+				+ '&nbsp;&nbsp;&nbsp;&nbsp;PC = addr;' + '<br>'
+				+ '}'
         },
         {
             opCode: 16,
@@ -480,7 +495,10 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: true,
-            codeEquiv: ''
+            codeEquiv: 'if(N == 0)' + '<br>'
+				+ '{' + '<br>'
+				+ '&nbsp;&nbsp;&nbsp;&nbsp;PC = addr;' + '<br>'
+				+ '}'
         },
         {
             opCode: 0,
@@ -512,7 +530,10 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: true,
-            codeEquiv: ''
+            codeEquiv: 'if(V == 0)' + '<br>'
+				+ '{' + '<br>'
+				+ '&nbsp;&nbsp;&nbsp;&nbsp;PC = addr;' + '<br>'
+				+ '}'
         },
         {
             opCode: 112,
@@ -528,7 +549,10 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: true,
-            codeEquiv: ''
+            codeEquiv: 'if(V == 1)' + '<br>'
+				+ '{' + '<br>'
+				+ '&nbsp;&nbsp;&nbsp;&nbsp;PC = addr;' + '<br>'
+				+ '}'
         },
         {
             opCode: 24,
@@ -544,7 +568,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'C = 0'
+            codeEquiv: 'C = 0;'
         },
         {
             opCode: 216,
@@ -560,7 +584,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'D = 0'
+            codeEquiv: 'D = 0;'
         },
         {
             opCode: 88,
@@ -576,7 +600,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'I = 0'
+            codeEquiv: 'I = 0;'
         },
         {
             opCode: 184,
@@ -592,7 +616,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'V = 0'
+            codeEquiv: 'V = 0;'
         },
         {
             opCode: 201,
@@ -832,7 +856,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem - 1'
+            codeEquiv: '*addr = *addr - 1;'
         },
         {
             opCode: 214,
@@ -848,7 +872,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem - 1'
+            codeEquiv: '*addr = *addr - 1;'
         },
         {
             opCode: 206,
@@ -864,7 +888,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem - 1'
+            codeEquiv: '*addr = *addr - 1;'
         },
         {
             opCode: 222,
@@ -880,7 +904,7 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem - 1'
+            codeEquiv: '*addr = *addr - 1;'
         },
         {
             opCode: 202,
@@ -896,7 +920,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = X - 1'
+            codeEquiv: 'X = X - 1;'
         },
         {
             opCode: 136,
@@ -912,7 +936,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = Y - 1'
+            codeEquiv: 'Y = Y - 1;'
         },
         {
             opCode: 73,
@@ -928,7 +952,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ val'
+            codeEquiv: 'A = A ^ *addr;'
         },
         {
             opCode: 69,
@@ -944,7 +968,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *mem'
+            codeEquiv: 'A = A ^ *addr;'
         },
         {
             opCode: 85,
@@ -960,7 +984,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *mem'
+            codeEquiv: 'A = A ^ *addr;'
         },
         {
             opCode: 65,
@@ -976,7 +1000,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *mem'
+            codeEquiv: 'A = A ^ *addr;'
         },
         {
             opCode: 81,
@@ -992,7 +1016,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *mem'
+            codeEquiv: 'A = A ^ *addr;'
         },
         {
             opCode: 77,
@@ -1008,7 +1032,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *mem'
+            codeEquiv: 'A = A ^ *addr;'
         },
         {
             opCode: 93,
@@ -1024,7 +1048,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *mem'
+            codeEquiv: 'A = A ^ *addr;'
         },
         {
             opCode: 89,
@@ -1040,7 +1064,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *mem'
+            codeEquiv: 'A = A ^ *addr;'
         },
         {
             opCode: 230,
@@ -1056,7 +1080,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem + 1'
+            codeEquiv: '*addr = *addr + 1;'
         },
         {
             opCode: 246,
@@ -1072,7 +1096,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem + 1'
+            codeEquiv: '*addr = *addr + 1;'
         },
         {
             opCode: 238,
@@ -1088,7 +1112,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem + 1'
+            codeEquiv: '*addr = *addr + 1;'
         },
         {
             opCode: 254,
@@ -1104,7 +1128,7 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem + 1'
+            codeEquiv: '*addr = *addr + 1;'
         },
         {
             opCode: 232,
@@ -1120,7 +1144,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = X + 1'
+            codeEquiv: 'X = X + 1;'
         },
         {
             opCode: 200,
@@ -1136,7 +1160,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = Y + 1'
+            codeEquiv: 'Y = Y + 1;'
         },
         {
             opCode: 76,
@@ -1152,7 +1176,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: 'PC = addr;'
         },
         {
             opCode: 108,
@@ -1168,7 +1192,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: 'PC = addr;'
         },
         {
             opCode: 32,
@@ -1200,7 +1224,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = val'
+            codeEquiv: 'A = *addr;'
         },
         {
             opCode: 165,
@@ -1216,7 +1240,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *mem'
+            codeEquiv: 'A = *addr;'
         },
         {
             opCode: 181,
@@ -1232,7 +1256,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *mem'
+            codeEquiv: 'A = *addr;'
         },
         {
             opCode: 161,
@@ -1248,7 +1272,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *mem'
+            codeEquiv: 'A = *addr;'
         },
         {
             opCode: 177,
@@ -1264,7 +1288,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *mem'
+            codeEquiv: 'A = *addr;'
         },
         {
             opCode: 173,
@@ -1280,7 +1304,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *mem'
+            codeEquiv: 'A = *addr;'
         },
         {
             opCode: 189,
@@ -1296,7 +1320,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *mem'
+            codeEquiv: 'A = *addr;'
         },
         {
             opCode: 185,
@@ -1312,7 +1336,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *mem'
+            codeEquiv: 'A = *addr;'
         },
         {
             opCode: 162,
@@ -1328,7 +1352,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = val'
+            codeEquiv: 'X = *addr;'
         },
         {
             opCode: 166,
@@ -1344,7 +1368,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *mem'
+            codeEquiv: 'X = *addr;'
         },
         {
             opCode: 182,
@@ -1360,7 +1384,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *mem'
+            codeEquiv: 'X = *addr;'
         },
         {
             opCode: 174,
@@ -1376,7 +1400,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *mem'
+            codeEquiv: 'X = *addr;'
         },
         {
             opCode: 190,
@@ -1392,7 +1416,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *mem'
+            codeEquiv: 'X = *addr;'
         },
         {
             opCode: 160,
@@ -1408,7 +1432,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = val'
+            codeEquiv: 'Y = *addr;'
         },
         {
             opCode: 164,
@@ -1424,7 +1448,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *mem'
+            codeEquiv: 'Y = *addr;'
         },
         {
             opCode: 180,
@@ -1440,7 +1464,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *mem'
+            codeEquiv: 'Y = *addr;'
         },
         {
             opCode: 172,
@@ -1456,7 +1480,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *mem'
+            codeEquiv: 'Y = *addr;'
         },
         {
             opCode: 188,
@@ -1472,7 +1496,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *mem'
+            codeEquiv: 'Y = *addr;'
         },
         {
             opCode: 74,
@@ -1488,7 +1512,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A >> 1'
+            codeEquiv: 'A = A >> 1;'
         },
         {
             opCode: 70,
@@ -1504,7 +1528,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem >> 1'
+            codeEquiv: '*addr = *addr >> 1;'
         },
         {
             opCode: 86,
@@ -1520,7 +1544,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem >> 1'
+            codeEquiv: '*addr = *addr >> 1;'
         },
         {
             opCode: 78,
@@ -1536,7 +1560,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem >> 1'
+            codeEquiv: '*addr = *addr >> 1;'
         },
         {
             opCode: 94,
@@ -1552,7 +1576,7 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = *mem >> 1'
+            codeEquiv: '*addr = *addr >> 1;'
         },
         {
             opCode: 234,
@@ -1584,7 +1608,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | val'
+            codeEquiv: 'A = A | *addr;'
         },
         {
             opCode: 5,
@@ -1600,7 +1624,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *mem'
+            codeEquiv: 'A = A | *addr;'
         },
         {
             opCode: 21,
@@ -1616,7 +1640,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *mem'
+            codeEquiv: 'A = A | *addr;'
         },
         {
             opCode: 1,
@@ -1632,7 +1656,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *mem'
+            codeEquiv: 'A = A | *addr;'
         },
         {
             opCode: 17,
@@ -1648,7 +1672,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *mem'
+            codeEquiv: 'A = A | *addr;'
         },
         {
             opCode: 13,
@@ -1664,7 +1688,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *mem'
+            codeEquiv: 'A = A | *addr;'
         },
         {
             opCode: 29,
@@ -1680,7 +1704,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *mem'
+            codeEquiv: 'A = A | *addr;'
         },
         {
             opCode: 25,
@@ -1696,7 +1720,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *mem'
+            codeEquiv: 'A = A | *addr;'
         },
         {
             opCode: 72,
@@ -1968,7 +1992,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - val - 1 + C'
+            codeEquiv: 'A = A - *addr - 1 + C;'
         },
         {
             opCode: 229,
@@ -1984,7 +2008,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *mem - 1 + C'
+            codeEquiv: 'A = A - *addr - 1 + C;'
         },
         {
             opCode: 245,
@@ -2000,7 +2024,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *mem - 1 + C'
+            codeEquiv: 'A = A - *addr - 1 + C;'
         },
         {
             opCode: 225,
@@ -2016,7 +2040,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *mem - 1 + C'
+            codeEquiv: 'A = A - *addr - 1 + C;'
         },
         {
             opCode: 241,
@@ -2032,7 +2056,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *mem - 1 + C'
+            codeEquiv: 'A = A - *addr - 1 + C;'
         },
         {
             opCode: 237,
@@ -2048,7 +2072,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *mem - 1 + C'
+            codeEquiv: 'A = A - *addr - 1 + C;'
         },
         {
             opCode: 253,
@@ -2064,7 +2088,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *mem - 1 + C'
+            codeEquiv: 'A = A - *addr - 1 + C;'
         },
         {
             opCode: 249,
@@ -2080,7 +2104,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *mem - 1 + C'
+            codeEquiv: 'A = A - *addr - 1 + C;'
         },
         {
             opCode: 56,
@@ -2096,7 +2120,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'C = 1'
+            codeEquiv: 'C = 1;'
         },
         {
             opCode: 248,
@@ -2112,7 +2136,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'D = 1'
+            codeEquiv: 'D = 1;'
         },
         {
             opCode: 120,
@@ -2128,7 +2152,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'I = 1'
+            codeEquiv: 'I = 1;'
         },
         {
             opCode: 133,
@@ -2144,7 +2168,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = A'
+            codeEquiv: '*addr = A;'
         },
         {
             opCode: 149,
@@ -2160,7 +2184,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = A'
+            codeEquiv: '*addr = A;'
         },
         {
             opCode: 129,
@@ -2176,7 +2200,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = A'
+            codeEquiv: '*addr = A;'
         },
         {
             opCode: 145,
@@ -2192,7 +2216,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = A'
+            codeEquiv: '*addr = A;'
         },
         {
             opCode: 141,
@@ -2208,7 +2232,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = A'
+            codeEquiv: '*addr = A;'
         },
         {
             opCode: 157,
@@ -2224,7 +2248,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = A'
+            codeEquiv: '*addr = A;'
         },
         {
             opCode: 153,
@@ -2240,7 +2264,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = A'
+            codeEquiv: '*addr = A;'
         },
         {
             opCode: 134,
@@ -2256,7 +2280,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = X'
+            codeEquiv: '*addr = X;'
         },
         {
             opCode: 150,
@@ -2272,7 +2296,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = X'
+            codeEquiv: '*addr = X;'
         },
         {
             opCode: 142,
@@ -2288,7 +2312,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = X'
+            codeEquiv: '*addr = X;'
         },
         {
             opCode: 132,
@@ -2304,7 +2328,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = Y'
+            codeEquiv: '*addr = Y;'
         },
         {
             opCode: 148,
@@ -2320,7 +2344,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = Y'
+            codeEquiv: '*addr = Y;'
         },
         {
             opCode: 140,
@@ -2336,7 +2360,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*mem = Y'
+            codeEquiv: '*addr = Y;'
         },
         {
             opCode: 170,
@@ -2352,7 +2376,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = A'
+            codeEquiv: 'X = A;'
         },
         {
             opCode: 168,
@@ -2368,7 +2392,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = A'
+            codeEquiv: 'Y = A;'
         },
         {
             opCode: 186,
@@ -2400,7 +2424,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = X'
+            codeEquiv: 'A = X;'
         },
         {
             opCode: 154,
@@ -2432,7 +2456,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = Y'
+            codeEquiv: 'A = Y;'
         }
     ];
 }());
