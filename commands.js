@@ -32,7 +32,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *addr + C;'
+            codeEquiv: 'A = A + *addr + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 101,
@@ -48,7 +50,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *addr + C;'
+            codeEquiv: 'A = A + *addr + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 117,
@@ -64,7 +68,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *addr + C;'
+            codeEquiv: 'A = A + *addr + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 97,
@@ -80,7 +86,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *addr + C;'
+            codeEquiv: 'A = A + *addr + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 113,
@@ -96,7 +104,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *addr + C;'
+            codeEquiv: 'A = A + *addr + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 109,
@@ -112,7 +122,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *addr + C;'
+            codeEquiv: 'A = A + *addr + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 125,
@@ -128,7 +140,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *addr + C;'
+            codeEquiv: 'A = A + *addr + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 121,
@@ -144,7 +158,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *addr + C;'
+            codeEquiv: 'A = A + *addr + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 41,
@@ -160,7 +176,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *addr;'
+            codeEquiv: 'A = A & *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 37,
@@ -176,7 +194,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *addr;'
+            codeEquiv: 'A = A & *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 53,
@@ -192,7 +212,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *addr;'
+            codeEquiv: 'A = A & *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 33,
@@ -208,7 +230,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *addr;'
+            codeEquiv: 'A = A & *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 49,
@@ -224,7 +248,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *addr;'
+            codeEquiv: 'A = A & *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 45,
@@ -240,7 +266,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *addr;'
+            codeEquiv: 'A = A & *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 61,
@@ -256,7 +284,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *addr;'
+            codeEquiv: 'A = A & *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 57,
@@ -272,7 +302,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A & *addr;'
+            codeEquiv: 'A = A & *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 10,
@@ -288,7 +320,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A << 1;'
+            codeEquiv: 'A = A << 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 6,
@@ -304,7 +338,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr << 1;'
+            codeEquiv: '*addr = *addr << 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 22,
@@ -320,7 +356,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr << 1;'
+            codeEquiv: '*addr = *addr << 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 14,
@@ -336,7 +374,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr << 1;'
+            codeEquiv: '*addr = *addr << 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 30,
@@ -352,7 +392,9 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr << 1;'
+            codeEquiv: '*addr = *addr << 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 144,
@@ -425,7 +467,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 44,
@@ -441,7 +485,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 48,
@@ -514,7 +560,9 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 80,
@@ -632,7 +680,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 197,
@@ -648,7 +698,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 213,
@@ -664,7 +716,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 193,
@@ -680,7 +734,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 209,
@@ -696,7 +752,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 205,
@@ -712,7 +770,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 221,
@@ -728,7 +788,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 217,
@@ -744,7 +806,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 224,
@@ -760,7 +824,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 228,
@@ -776,7 +842,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 236,
@@ -792,7 +860,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 192,
@@ -808,7 +878,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 196,
@@ -824,7 +896,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 204,
@@ -840,7 +914,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 198,
@@ -856,7 +932,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr - 1;'
+            codeEquiv: '*addr = *addr - 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 214,
@@ -872,7 +950,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr - 1;'
+            codeEquiv: '*addr = *addr - 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 206,
@@ -888,7 +968,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr - 1;'
+            codeEquiv: '*addr = *addr - 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 222,
@@ -904,7 +986,9 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr - 1;'
+            codeEquiv: '*addr = *addr - 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 202,
@@ -920,7 +1004,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = X - 1;'
+            codeEquiv: 'X = X - 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 136,
@@ -936,7 +1022,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = Y - 1;'
+            codeEquiv: 'Y = Y - 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 73,
@@ -952,7 +1040,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *addr;'
+            codeEquiv: 'A = A ^ *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 69,
@@ -968,7 +1058,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *addr;'
+            codeEquiv: 'A = A ^ *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 85,
@@ -984,7 +1076,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *addr;'
+            codeEquiv: 'A = A ^ *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 65,
@@ -1000,7 +1094,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *addr;'
+            codeEquiv: 'A = A ^ *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 81,
@@ -1016,7 +1112,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *addr;'
+            codeEquiv: 'A = A ^ *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 77,
@@ -1032,7 +1130,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *addr;'
+            codeEquiv: 'A = A ^ *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 93,
@@ -1048,7 +1148,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *addr;'
+            codeEquiv: 'A = A ^ *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 89,
@@ -1064,7 +1166,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A ^ *addr;'
+            codeEquiv: 'A = A ^ *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 230,
@@ -1080,7 +1184,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr + 1;'
+            codeEquiv: '*addr = *addr + 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 246,
@@ -1096,7 +1202,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr + 1;'
+            codeEquiv: '*addr = *addr + 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 238,
@@ -1112,7 +1220,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr + 1;'
+            codeEquiv: '*addr = *addr + 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 254,
@@ -1128,7 +1238,9 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr + 1;'
+            codeEquiv: '*addr = *addr + 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 232,
@@ -1144,7 +1256,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = X + 1;'
+            codeEquiv: 'X = X + 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 200,
@@ -1160,7 +1274,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = Y + 1;'
+            codeEquiv: 'Y = Y + 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 76,
@@ -1208,7 +1324,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 169,
@@ -1224,7 +1342,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *addr;'
+            codeEquiv: 'A = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 165,
@@ -1240,7 +1360,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *addr;'
+            codeEquiv: 'A = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 181,
@@ -1256,7 +1378,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *addr;'
+            codeEquiv: 'A = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 161,
@@ -1272,7 +1396,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *addr;'
+            codeEquiv: 'A = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 177,
@@ -1288,7 +1414,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *addr;'
+            codeEquiv: 'A = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 173,
@@ -1304,7 +1432,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *addr;'
+            codeEquiv: 'A = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 189,
@@ -1320,7 +1450,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *addr;'
+            codeEquiv: 'A = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 185,
@@ -1336,7 +1468,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = *addr;'
+            codeEquiv: 'A = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 162,
@@ -1352,7 +1486,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *addr;'
+            codeEquiv: 'X = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 166,
@@ -1368,7 +1504,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *addr;'
+            codeEquiv: 'X = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 182,
@@ -1384,7 +1522,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *addr;'
+            codeEquiv: 'X = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 174,
@@ -1400,7 +1540,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *addr;'
+            codeEquiv: 'X = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 190,
@@ -1416,7 +1558,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = *addr;'
+            codeEquiv: 'X = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 160,
@@ -1432,7 +1576,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *addr;'
+            codeEquiv: 'Y = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 164,
@@ -1448,7 +1594,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *addr;'
+            codeEquiv: 'Y = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 180,
@@ -1464,7 +1612,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *addr;'
+            codeEquiv: 'Y = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 172,
@@ -1480,7 +1630,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *addr;'
+            codeEquiv: 'Y = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 188,
@@ -1496,7 +1648,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = *addr;'
+            codeEquiv: 'Y = *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 74,
@@ -1512,7 +1666,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A >> 1;'
+            codeEquiv: 'A = A >> 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 70,
@@ -1528,7 +1684,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr >> 1;'
+            codeEquiv: '*addr = *addr >> 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 86,
@@ -1544,7 +1702,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr >> 1;'
+            codeEquiv: '*addr = *addr >> 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 78,
@@ -1560,7 +1720,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr >> 1;'
+            codeEquiv: '*addr = *addr >> 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 94,
@@ -1576,7 +1738,9 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: '*addr = *addr >> 1;'
+            codeEquiv: '*addr = *addr >> 1;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 234,
@@ -1608,7 +1772,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *addr;'
+            codeEquiv: 'A = A | *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 5,
@@ -1624,7 +1790,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *addr;'
+            codeEquiv: 'A = A | *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 21,
@@ -1640,7 +1808,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *addr;'
+            codeEquiv: 'A = A | *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 1,
@@ -1656,7 +1826,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *addr;'
+            codeEquiv: 'A = A | *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 17,
@@ -1672,7 +1844,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *addr;'
+            codeEquiv: 'A = A | *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 13,
@@ -1688,7 +1862,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *addr;'
+            codeEquiv: 'A = A | *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 29,
@@ -1704,7 +1880,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *addr;'
+            codeEquiv: 'A = A | *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 25,
@@ -1720,7 +1898,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A | *addr;'
+            codeEquiv: 'A = A | *addr;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 72,
@@ -1736,7 +1916,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 8,
@@ -1752,7 +1934,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 104,
@@ -1768,7 +1952,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 40,
@@ -1784,7 +1970,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 42,
@@ -1800,7 +1988,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 38,
@@ -1816,7 +2006,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 54,
@@ -1832,7 +2024,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 46,
@@ -1848,7 +2042,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 62,
@@ -1864,7 +2060,9 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 106,
@@ -1880,7 +2078,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 102,
@@ -1896,7 +2096,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 118,
@@ -1912,7 +2114,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 110,
@@ -1928,7 +2132,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 126,
@@ -1944,7 +2150,9 @@
             cycleCountMin: 7,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 64,
@@ -1960,7 +2168,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 96,
@@ -1976,7 +2186,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 233,
@@ -1992,7 +2204,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *addr - 1 + C;'
+            codeEquiv: 'A = A - *addr - 1 + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 229,
@@ -2008,7 +2222,9 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *addr - 1 + C;'
+            codeEquiv: 'A = A - *addr - 1 + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 245,
@@ -2024,7 +2240,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *addr - 1 + C;'
+            codeEquiv: 'A = A - *addr - 1 + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 225,
@@ -2040,7 +2258,9 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *addr - 1 + C;'
+            codeEquiv: 'A = A - *addr - 1 + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 241,
@@ -2056,7 +2276,9 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *addr - 1 + C;'
+            codeEquiv: 'A = A - *addr - 1 + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 237,
@@ -2072,7 +2294,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *addr - 1 + C;'
+            codeEquiv: 'A = A - *addr - 1 + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 253,
@@ -2088,7 +2312,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *addr - 1 + C;'
+            codeEquiv: 'A = A - *addr - 1 + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 249,
@@ -2104,7 +2330,9 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A - *addr - 1 + C;'
+            codeEquiv: 'A = A - *addr - 1 + C;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 56,
@@ -2376,7 +2604,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'X = A;'
+            codeEquiv: 'X = A;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 168,
@@ -2392,7 +2622,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'Y = A;'
+            codeEquiv: 'Y = A;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 186,
@@ -2408,7 +2640,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 138,
@@ -2424,7 +2658,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = X;'
+            codeEquiv: 'A = X;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 154,
@@ -2440,7 +2676,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: ''
+            codeEquiv: '' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         },
         {
             opCode: 152,
@@ -2456,7 +2694,9 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = Y;'
+            codeEquiv: 'A = Y;' + '<br>'
+				+ '<br>'
+				+ '<span style="color: green;">// This equivalent C code is not complete, yet..</span>'
         }
     ];
 }());
