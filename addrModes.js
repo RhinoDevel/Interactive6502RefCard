@@ -61,7 +61,7 @@
             title: 'zero page',
             byteCount: 2,
             comment: '',
-            codeEquiv: 'addr = PC;'
+            codeEquiv: 'addr = *PC;'
         },
         {
             id: '24',
@@ -69,7 +69,7 @@
             title: 'zero page, X',
             byteCount: 2,
             comment: '',
-            codeEquiv: 'addr = PC + X;'
+            codeEquiv: 'addr = *PC + X;'
         },
         {
             id: '25',
@@ -77,7 +77,7 @@
             title: 'zero page, Y',
             byteCount: 2,
             comment: '',
-            codeEquiv: 'addr = PC + Y;'
+            codeEquiv: 'addr = *PC + Y;'
         },
         {
             id: '26',
@@ -85,7 +85,7 @@
             title: '(zero page, X)',
             byteCount: 2,
             comment: '(pre-)indexed indirect',
-            codeEquiv: 'addr = *(PC + X);'
+            codeEquiv: 'addr = *(*PC + X);'
         },
         {
             id: '27',
@@ -93,7 +93,7 @@
             title: '(zero page), Y',
             byteCount: 2,
             comment: 'indirect (post-)indexed',
-            codeEquiv: 'addr = *PC + Y;'
+            codeEquiv: 'addr = *(*PC) + Y;'
         },
 
         // Addressing modes, where the commands have a length of three bytes:
