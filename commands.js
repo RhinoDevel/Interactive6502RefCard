@@ -32,7 +32,7 @@
             cycleCountMin: 2,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + val + C'
+            codeEquiv: 'A = A + *addr + C;'
         },
         {
             opCode: 101,
@@ -48,7 +48,7 @@
             cycleCountMin: 3,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *mem + C'
+            codeEquiv: 'A = A + *addr + C;'
         },
         {
             opCode: 117,
@@ -64,7 +64,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *mem + C'
+            codeEquiv: 'A = A + *addr + C;'
         },
         {
             opCode: 97,
@@ -80,7 +80,7 @@
             cycleCountMin: 6,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *mem + C'
+            codeEquiv: 'A = A + *addr + C;'
         },
         {
             opCode: 113,
@@ -96,7 +96,7 @@
             cycleCountMin: 5,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *mem + C'
+            codeEquiv: 'A = A + *addr + C;'
         },
         {
             opCode: 109,
@@ -112,7 +112,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: false,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *mem + C'
+            codeEquiv: 'A = A + *addr + C;'
         },
         {
             opCode: 125,
@@ -128,7 +128,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *mem + C'
+            codeEquiv: 'A = A + *addr + C;'
         },
         {
             opCode: 121,
@@ -144,7 +144,7 @@
             cycleCountMin: 4,
             cycleAddOnPageCross: true,
             cycleAddOnBranch: false,
-            codeEquiv: 'A = A + *mem + C'
+            codeEquiv: 'A = A + *addr + C;'
         },
         {
             opCode: 41,
